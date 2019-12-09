@@ -5,8 +5,7 @@ public class Dog extends Animal{
     public Dog(){
         super(name);
     }
-    public static String sound(){
-
+    public String sound(){
         return "barks";
     }
 }

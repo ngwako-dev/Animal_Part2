@@ -6,7 +6,7 @@ public class Cat extends Animal{
         super(name);
     }
 
-    public static String sound(){
+    public String sound(){
         return "Meow";
     }
 }

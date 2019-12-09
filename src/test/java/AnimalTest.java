@@ -6,12 +6,14 @@ class AnimalTest {
     @Test
 
     void TestDogEats(){
-        assertEquals("Food",Dog.eat());//test pass
+        Dog dog=new Dog();
+        assertEquals("Food",dog.eat());//test pass
 //        assertEquals("Meat",Dog.eat());//This test fails
     }
     @Test
     void TestCatEats(){
-        assertEquals("Food",Cat.eat());//Test pass
+        Cat cat=new Cat();
+        assertEquals("Food",cat.eat());//Test pass
 //        assertEquals("Meat",Cat.eat());//This test fails
     }
 
@@ -19,13 +21,16 @@ class AnimalTest {
 class CatTest{
     @Test
     void TestDogSound(){
-        assertEquals("barks",Dog.sound());//This test pass
+        Dog dog=new Dog();
+        assertEquals("barks",dog.sound());//This test pass
 //        assertEquals("Meow",Dog.sound());//This test fails
     }
 
     @Test
     void TestCatSound(){
-        assertEquals("Meow",Cat.sound());//This test pass
+        Cat cat =new Cat();
+
+        assertEquals("Meow",cat.sound());//This test pass
 //        assertEquals("bark",Cat.sound());//This test fails
     }
 }
